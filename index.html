@@ -1,1 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diecast Vault</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <header>
+        <div class="logo">DieCast Vault</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#products">Catalog</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="hero-content">
+                <h1>Welcome!</h1>
+                <p>Check out our collection below</p>
+                <a href="#products" class="btn">Browse Catalog</a>
+            </div>
+        </section>
+
+        <section id="products">
+            <h2>Our Collection</h2>
+            
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="mainlines">Hot Wheels Mainlines</button>
+                <button class="filter-btn" data-filter="silver">Hot Wheels Silver Series</button>
+                <button class="filter-btn" data-filter="premium">Hot Wheels Premium</button>
+                <button class="filter-btn" data-filter="minigt">Mini GT</button>
+            </div>
+
+            <div id="productGrid"></div>
+        </section>
+
+        <section id="contact">
+            <h2>Send us a message</h2>
+            <form id="contactForm">
+                <div class="input-group">
+                    <label>Name</label>
+                    <input type="text" id="name" placeholder="Enter your name">
+                </div>
+                
+                <div class="input-group">
+                    <label>Email</label>
+                    <input type="text" id="email" placeholder="Enter your email">
+                </div>
+                
+                <div class="input-group">
+                    <label>Message</label>
+                    <textarea id="message" placeholder="Type your message here..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit Form</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Diecast Vault</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
